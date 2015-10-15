@@ -1,5 +1,5 @@
-var accountSid = "AC4394702bc4b95772340df5d902d460a5";
-var authToken = "fcf4aa2bfc18b0a6c592263eaaac25b1";
+var accountSid = "XXXX-ENTER-YOUR-TWILIO-INFO-HERE-XXXX";
+var authToken = "XXXX-ENTER-YOUR-TWILIO-INFO-HERE-XXXX";
 
 
 var fs = require('fs'),
