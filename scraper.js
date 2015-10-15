@@ -13,7 +13,7 @@ var mins = 0.05,
 
 
 setInterval(function() {
-  url = 'http://www.amazon.co.uk/gp/product/1118531647';
+  url = 'http://www.lightspeedpos.com/retail/pricing/';
 
   request(url, function(error, response, html) {
     var price;
@@ -23,7 +23,7 @@ setInterval(function() {
 
     if (!error && response.statusCode == 200) {
       var $ = cheerio.load(html);
-      $('.inlineBlock-display span.a-color-price').each(function(i, element) {
+      $('#mediumMonthly').each(function(i, element) {
         var a = $(this);
         var price = a.text();
 
