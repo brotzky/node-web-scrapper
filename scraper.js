@@ -40,8 +40,8 @@ setInterval(function() {
             console.log('Price has changed sending text!');
             console.log(price, obj.price);
             client.messages.create({
-              from: "+14509000751",
-              to: "+15146326321",
+              from: "XXXX-ENTER-YOUR-TWILIO-#-HERE",
+              to: "+5555555555",
               body: "The price for the Amazon listing has changed to " + price + " from "+ obj.price,
             })
             fs.writeFile('price.json', JSON.stringify(json, null, 4), function(err) {
